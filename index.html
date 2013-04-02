@@ -10,19 +10,45 @@
 <body>
 	<div id="header">
 		<div id="header_div_1">
-			<p>HM</p>
+			<p>Welcome!</p>
 		</div>
 		<div id="header_div_2">
 			<p>The time on the server is ${serverTime}.</p>
 		</div>
 	</div>
-	<div class="general_menu">
-		<h2>General Buttons</h2>
+	<div id="general_menu">
+		<h2 id="activate_sub_menu">Click for sub-menu</h2>
+		<h1 class="sub_menu">sub-menu</h1>
+		<p class="sub_menu">menu item 1</p>
+		<p class="sub_menu">menu item 2</p>
+		<p class="sub_menu">menu item 3</p>
+		<h1 class="slide_sub_menu">slide sub-menu</h1>
+		<p class="slide_sub_menu">slide menu item 1</p>
+		<p class="slide_sub_menu">slide menu item 2</p>
+		<p class="slide_sub_menu">slide menu item 3</p>
+		<h1 class="fade_sub_menu">fade sub-menu</h1>
+		<p class="fade_sub_menu">fade menu item 1</p>
+		<p class="fade_sub_menu">fade menu item 2</p>
+		<p class="fade_sub_menu">fade menu item 3</p>
 	</div>
-	<div id="opop">
-		<p>Här är lite text</p>
-		<p>Här är lite text</p>
-		<p>Här är lite text</p>
+	<div id="table_sheet">
+		<p id="click_events">Click me and I will turn red on mousedown and yellow on mouseup</p>
+		<p id="activate_slide_sub_menu">I'm activating the slide sub-menu!</p>
+		<p id="activate_fade_sub_menu">I'm activating the fade sub-menu, including a delay!</p>
+		<p>Click <strong>HERE</strong> to highlight just the "HERE" word!</p>
+		<p class="mouseover_event">Mouseover me! The first of us that you mouseover will stay green until mouseleave!</p>
+		<p class="mouseover_event">Mouseover me! The first of us that you mouseover will stay green until mouseleave!</p>
+		<p class="mouseover_event">Mouseover me! The first of us that you mouseover will stay green until mouseleave!</p>
+		<p id="fadeto_and_callback">I am a callback function. Press me and I will fade tp 30%, then I will make the text currently below me white!</p>
+		<p id="callback">If I am white, it means you pressed the crazy text above me</p>
+		<p>Even more text!!!</p>
+		<p>Even more text!!!</p>
+		<p>Even more text!!!</p>
+	</div>
+	<div id="footer">
+		<input id="button1" type="button" value ="Animate!" />
+		<p id="animation1">I will shrink and move to the right!</p>
+		<p id="animation2">I will fade and disappear right after my above neighbor has moved!</p>
 	</div>
 </body>
 </html>
