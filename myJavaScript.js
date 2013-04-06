@@ -47,7 +47,7 @@ $(document).ready(function(){
 	});
 	
 	//Animation
-	$("#button1").click(function() {
+	$("#btn_button1").click(function() {
 		$("#animation1").animate({
 			"font-size":"toggle",
 			"width":"20%",
@@ -56,4 +56,30 @@ $(document).ready(function(){
 			$("#animation2").fadeOut(1000);
 		});
 	});
+	
+	//Classes
+	$(".toggling").mouseenter(function() {
+		$(this).toggleClass("toggling");
+	});
+	
+	//manipulate html code
+	$("#btn_manipulate1").click(function() {
+		$("#manipulate_me_1").text("Only the text was manipulated");
+	});
+	$("#btn_manipulate2").click(function() {
+		$("#manipulate_me_2").html('The <b style="color: red;">html</b> was manipulated');
+	});
+	$("#btn_manipulate3").click(function() {
+		$("#manipulate_me_3").append(" appended text ");
+	});
+	$("#btn_manipulate4").click(function() {
+		$("#manipulate_me_4").after("Appended text outside of the div-element. ");
+	});
+	$("#btn_manipulate5").click(function() {
+		$("#manipulate_me_5").replaceWith("This is a new text outside of the div-element.<br>");
+	});
+	$("#btn_manipulate6").click(function() {
+		$("#manipulate_me_6").attr("src", "http://i.imgur.com/6tahV.png");
+	});
+	
 });

@@ -1,3 +1,7 @@
+body {
+	background-color: black;
+}
+
 #general_menu > h2 {
 	margin: 0px 0px 0px 0px;
 }
@@ -6,7 +10,16 @@
 	margin: 0px 0px 0px 0px;
 }
 
+#table_sheet > img {
+	margin: 0px 0px 0px 0px;
+}
+
 #footer > p {
+	margin: 0px 0px 0px 0px;
+}
+
+#manipulate_me > p {
+	background-color: #999999;
 	margin: 0px 0px 0px 0px;
 }
 
@@ -60,6 +73,12 @@
 	margin: 0px 0px 0px 0px;
 }
 
+.toggling{
+	background-color: #778899;
+	font-style: italic;
+	font-family: fantasy;
+}
+
 #general_menu {
 	/* position: relative; */
 	float: left;
@@ -78,7 +97,7 @@
 	border-radius: 10px;
 	background-color: #bbbbbb;
 	padding: 10px;
-	height: 500;
+	height: 700;
 	width: 80%;
 	margin-top: 60px;
 	margin-bottom: 10px;
@@ -100,4 +119,3 @@
 	position: relative;
 	background-color: orange;
 }
-
