@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Split Screen Vertically</title>
+	<style>
+	html {
+		height: 100%; /* required for `min-height` on the body to equate to at least screen-height also */
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font: 16px/20px "Helvetica Neue", Arial, Helvetica, sans-serif; text-align: justify;
+		color: #333;
+		background: #eee;
+	}
+
+	body {
+		position: relative; /* required for IE */
+		min-height: 100%;
+		width: 100%;
+		margin: 0 auto; /* center the body */
+		background: white;
+	}
+
+	/* main column */
+	#right {
+		display: block;
+		padding: 0 20px 20px 460px;
+	}
+
+	/* left column */
+	#left {/* use `position: fixed` for a neat effect. use `overflow: hidden` to cut off when main column is short */
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 400px;
+		overflow: auto;
+		margin-left: -1600px;
+		padding: 0 20px 0 1620px;
+		text-align: left;
+		font-size: 85%;
+		color: #eee;
+		background:#333;
+	}
+
+	p {
+		margin: 0;
+		padding: 20px 0 0 0;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="left"><p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et	dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div id="right"><p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et	dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</body>
+</html>
